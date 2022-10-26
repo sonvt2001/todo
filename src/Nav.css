@@ -1,0 +1,19 @@
+
+.links{
+    display: flex;
+    list-style: none;
+}
+
+.link-item{
+    border: none;
+}
+
+.link-item:hover .link{
+    color: red;
+}
+
+.link{
+    text-decoration: none;
+    border: none;
+    color: #000;
+}

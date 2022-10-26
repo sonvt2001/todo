@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  max-width: 800px;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 0 2px 6px #555;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #666;
+}
+
+form{
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+}
+
+form input{
+  flex: 3;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #555;
+  margin: 0 5px;
+}
+
+form button{
+  flex: 0.3 1;
+  background: #337DFF;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px 40px;
+  outline: none; 
+}
+
+.submitCreate:hover{
+  background-color: green;
+}
+ul li{
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+ul li .active{
+  text-decoration: line-through;
+  border-radius: 10px;
+}
+
+ul li input,
+.row input{
+  margin-right: 5px;
+  transform: translateY(1px);
+  outline: none;
+  border: none;
+}
+
+ul li button,
+.row button{
+  border: none;
+  outline: none;
+  color: White;
+  background: orange;
+  padding:  5px 10px;
+  cursor: pointer;
+  border-radius: 20px
+}
+
+ul li button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #FF8300;
+}
+
+ul li button:hover{
+  background: #FF8300;
+  opacity: 0.5;
+  opacity: unset;
+}
+
+.completeButton {
+  opacity: 1;
+  background: green;
+  border: none;
+  margin-right: 10px;
+}
+
+.completeButton:hover{
+  background-color: green;
+  opacity: 0.7;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.row #delete{
+  background: crimson;
+  width: 50px;
+}
+
+.row #delete:hover{
+  background: red;
+}
+
+.saveEdit{
+  width: 90%;
+}
+
+label{
+  cursor: pointer;
+}
+
+@media (max-width:400px){
+  .App{
+    padding: 10px;
+  }
+}
+
+h5{
+  text-align: center;
+  color: crimson;
+  margin-top:150px;
+}
+
